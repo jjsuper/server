@@ -78,6 +78,7 @@ Modify corresponding lines in `sshd_config` to
 
 `
 Port 2200
+
 PasswordAuthentication no
 `
 ```
