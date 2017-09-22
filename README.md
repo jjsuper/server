@@ -29,6 +29,7 @@ sudo apt-get install apache2
 
 
 ## Summary of configuration
+
 1. Generate Key Pairs
 
 In Client PC
@@ -85,6 +86,7 @@ sudo service ssh restart
 
 5. Configure Uncomplicated Firewall(UFW)
 To update Lightsail firewall, add a new rule in Networking setting.
+
 Application | Protocol  | Port range	
 ----------- | --------- | ----------
 HTTP        | TCP       | 80	
