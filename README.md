@@ -29,17 +29,15 @@ sudo apt-get install apache2
 
 
 ## Summary of configuration
-
-
-
-
 1. Generate Key Pairs
-In Client PC,
+
+In Client PC
 ```
 ssh-keygen
-~/.ssh/Udacity
-~/.ssh/Udacity.pub
 ```
+Generate two files
+`~/.ssh/Udacity` and `~/.ssh/Udacity.pub`
+
 
 2. Create a New User
 ```
@@ -50,6 +48,7 @@ Give `sudo` access
 sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
 ```
 Then modify `/etc/sudoers.d/grader` to
+
 `grader ALL=(ALL) NOPASSWD:ALL`
 
 3. Install a Public Key
@@ -75,6 +74,7 @@ Change SSH port from 22 to 2200.
 sudo nano /etc/ssh/sshd_config
 ```
 Modify corresponding lines in `sshd_config` to
+
 `
 Port 2200
 PasswordAuthentication no
@@ -85,9 +85,10 @@ sudo service ssh restart
 
 5. Configure Uncomplicated Firewall(UFW)
 To update Lightsail firewall, add a new rule in Networking setting.
-Application\tProtocol\tPort range	
-HTTP\tTCP\t80	
-Custom\tTCP\t2200
+Application | Protocol  | Port range	
+----------- | --------- | ----------
+HTTP        | TCP       | 80	
+Custom      | TCP       | 2200
 
 UFW
 ```
