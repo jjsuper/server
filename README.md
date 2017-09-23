@@ -66,7 +66,6 @@ In the terminal, type in
 	sudo apt-get update
 	sudo apt-get upgrade
 	```
-
 ### Change SSH port from 22 to 2200.
 1. Modify `sshd_config` file to `Port 2200` and `PasswordAuthentication no`.
 	```
