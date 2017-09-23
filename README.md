@@ -62,7 +62,6 @@ You can visit http://54.245.155.141 for the website deployed.
 	```
 ### Update all currently installed packages
 In the terminal, type in
-
 	```
 	sudo apt-get update
 	sudo apt-get upgrade
